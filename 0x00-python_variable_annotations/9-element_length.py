@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
-"""
-Script defines a function to calculate the length of each element in a list
+"""Script defines a function to calculate the length of each element in a list
 """
 
 from typing import Iterable, Sequence, List, Tuple

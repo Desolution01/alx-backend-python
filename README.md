@@ -9,3 +9,7 @@ contains projects for backend enineering with python
 ![Latest commit](https://img.shields.io/github/last-commit/B3zaleel/alx-backend-python/main?style=round-square)
 
 This repo contains projects for learning backend development concepts with __Python__.
+
+## projects
+
+- [Python annotations](./0x00-python_variable_annotations)
