@@ -4,15 +4,18 @@
 Given the parameters and the return values, add type
 annotations to the function.
 """
-from typing import Any, Mapping, Union
+from typing import Any, Mapping, Union, TypeVar
 
-def safely_get_value(dct: Mapping, key: Any, default: Union[None, Any] = None) -> Union[None, Any]:
-    '''
-    Retrieves a value from a dictionary using a given key.
+T = TypeVar('T')
+Res = Union[Any, T]
+Def = Union[T, None]
 
-    :param dct: The dictionary to retrieve the value from.
-    :param key: The key to search for in the dictionary.
-    :param default: The value to return if the key is not found (default is None).
-    :return: The value associated with the key in the dictionary, or the default value if not found.
+
+def safely_get_value(dct: Mapping, key: Any, default: Def = None) -> Res:
+    '''Retrieves a value from a dict using a given key.
     '''
-    return dct.get(key, default)
+    if key in dct:
+        return dct[key]
+    else:
+        return default
+    
