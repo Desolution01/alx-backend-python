@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
-'''Task 10's module.
-'''
+"""
+Augment the following code with the correct duck-typed annotations.
+"""
 from typing import Any, Sequence, Union
 
 
