@@ -4,12 +4,7 @@
 '''
 
 
-def plus(a: float, b: float) -> float:
-    """
-    Add two floats and return the sum.
-
-    :param a: The first float.
-    :param b: The second float.
-    :return: The sum of the two floats.
-    """
+def add(a: float, b: float) -> float:
+    '''Adds two floating-point numbers.
+    '''
     return a + b
