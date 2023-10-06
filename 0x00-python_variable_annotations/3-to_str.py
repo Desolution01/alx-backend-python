@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
+'''Task 3's module.
+'''
 
 def to_str(n: float) -> str:
-    """
-    Convert a float to its string representation.
-
-    :param n: The input float.
-    :return: The string representation of the input float.
-    """
+    '''Converts a floating-point number to a string.
+    '''
     return str(n)
